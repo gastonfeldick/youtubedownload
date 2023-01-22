@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>800</width>
+     <height>600</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="maximumSize">
+       <size>
+        <width>800</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="encabezado">
+         <property name="maximumSize">
+          <size>
+           <width>1920</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background:rgb(0, 0, 0);COLOR:(170, 255, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QCommandLinkButton" name="repositorio">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>200</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#repositorio{
+	background-color:rgb(0, 0, 0);
+	color:rgb(255, 0, 0);
+}
+QPushButton:hover#repositorio{
+	background-color:rgb(85, 255, 255);
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Repositorio: gitlab</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="Descarga">
+         <property name="maximumSize">
+          <size>
+           <width>1920</width>
+           <height>400</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="frameDescarga" native="true">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>130</y>
+            <width>551</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <widget class="QProgressBar" name="barra">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>531</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="estado">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>10</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Descargando</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>40</y>
+            <width>100</width>
+            <height>80</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>vistas/imagenes/R (1).png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>10</y>
+            <width>191</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>YOUTUBE DOWNLOAD</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="cuerpo">
+         <property name="maximumSize">
+          <size>
+           <width>1920</width>
+           <height>300</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background:rgb(221, 221, 221)</string>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhDate</set>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QComboBox" name="formato">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>10</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">BACKGROUND:rgb(255, 255, 255)</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>MP4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MP3</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>40</y>
+            <width>41</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>URL</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="url">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>50</y>
+            <width>451</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">BACKGROUND:rgb(255, 255, 255)</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>0</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Formato</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="descargar">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>220</y>
+            <width>161</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+QPushButton:hover#descargar{
+	background-color:rgb(255, 0, 0)
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>vistas/imagenes/DOWNLOAD.png</normaloff>vistas/imagenes/DOWNLOAD.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>150</width>
+            <height>120</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="buscar">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>90</y>
+            <width>191</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Cambria</family>
+            <pointsize>11</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#buscar{
+	background-color:rgb(255, 0, 0);
+	color:rgb(255, 255, 255);
+}
+QPushButton:hover#buscar{
+background-color:rgb(255, 255, 255);
+	color:rgb(255, 0, 0);
+
+}</string>
+          </property>
+          <property name="text">
+           <string>BUSCAR</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="labelTitulo">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>160</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Titulo</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="titulo">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>160</y>
+            <width>431</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <zorder>label_3</zorder>
+         <zorder>formato</zorder>
+         <zorder>label_2</zorder>
+         <zorder>url</zorder>
+         <zorder>descargar</zorder>
+         <zorder>buscar</zorder>
+         <zorder>labelTitulo</zorder>
+         <zorder>titulo</zorder>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
